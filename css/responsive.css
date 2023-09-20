@@ -100,8 +100,16 @@
         height: 280px;
     }
 
-    .brand-logos {
+    .brand-logos img {
         width: 80px;
+    }
+
+    .footer-logo {
+        order: 1;
+    }
+
+    .footer-copyright {
+        order: 2;
     }
 
 }
