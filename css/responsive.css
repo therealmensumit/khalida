@@ -1,4 +1,12 @@
 @media (max-width: 991px) {
+    .home-page #header .offcanvas .navbar-brand img {
+        filter: invert(0)
+    }
+
+    #header .offcanvas .navbar-brand img {
+        filter: invert(0)
+    }
+
     .navbar-brand {
         margin: auto;
     }
@@ -157,6 +165,23 @@
 
     .slide-card {
         margin: 10px;
+    }
+
+    #pills-tab.nav-pills {
+        justify-content: space-between !important;
+    }
+
+    #pills-tab.nav-pills .nav-link {
+        margin: 0;
+    }
+
+    #pills-tab.nav-pills .nav-item:not(:last-child) .nav-link {
+        margin-right: 10px;
+    }
+
+    .thumbnail-img img {
+        width: 70px;
+        height: 70px;
     }
 
     .footer-logo {

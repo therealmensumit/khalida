@@ -30,19 +30,27 @@
                     </nav>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-gap-4">
                 <div class="col-lg-6">
-                    <div class="product-img">
+                    <div class="product-img position-relative">
                         <img src="./img/product/product1.jpg" alt="" class="img-fluid" />
+                        <div class="slick-arrows">
+                            <button class="prev-arrow">
+                                <img src="img/slick-arrow.png" alt="Left Arrow" />
+                            </button>
+                            <button class="next-arrow">
+                                <img src="img/slick-arrow.png" alt="Right Arrow" />
+                            </button>
+                        </div>
                     </div>
                     <div class="thumbnail-img">
-                        <a href="#" class="active">
+                        <a role="button" class="active">
                             <img src="./img/product/product1.jpg" alt="" class="img-fluid" />
                         </a>
-                        <a href="#">
-                            <img src="./img/product/product1.jpg" alt="" class="img-fluid" />
+                        <a role="button">
+                            <img src="./img/product/product2.jpg" alt="" class="img-fluid" />
                         </a>
-                        <a href="#">
+                        <a role="button">
                             <img src="./img/product/product1.jpg" alt="" class="img-fluid" />
                         </a>
                     </div>
@@ -165,6 +173,19 @@
     <script src="js/slick.min.js"></script>
     <script src="js/youtube-popup.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        let prodImg = document.querySelector('.product-img img')
+        const thumbImg = document.querySelectorAll(".thumbnail-img a img");
+        thumbImg.forEach((e) => {
+            $(e).click(() => {
+                prodImg.srcset = e.src;
+            });
+        });
+        $('.thumbnail-img a').click(function () {
+            $('.thumbnail-img a').removeClass('active');
+            $(this).addClass('active')
+        })
+    </script>
 </body>
 
 </html>

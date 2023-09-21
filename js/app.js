@@ -97,6 +97,19 @@ $(".testimonial-slider").slick({
   ],
 });
 
+$(".thumbnail-img").slick({
+  dots: false,
+  arrow: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  prevArrow: ".prev-arrow",
+  nextArrow: ".next-arrow",
+});
+
 $("#yt-vid").grtyoutube({
   autoPlay: true,
 });

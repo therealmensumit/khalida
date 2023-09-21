@@ -289,7 +289,7 @@ button:is(:focus, :active) {
     border-radius: 50%;
     width: 16px;
     height: 16px;
-    opacity: 1;
+    opacity: 1 !important;
     font-size: 0;
 }
 
@@ -300,14 +300,14 @@ button:is(:focus, :active) {
 .slick-arrows {
     position: absolute;
     right: 60px;
-    bottom: 40px;
+    bottom: 20px;
     text-align: right;
     width: auto;
 }
 
 .slick-arrows button {
-    width: 50px;
-    height: 40px;
+    width: 70px;
+    height: 60px;
     border: 2px solid #080404;
 }
 
@@ -560,7 +560,7 @@ button:is(:focus, :active) {
 
 
 .product-img {
-    height: 600px;
+    max-height: 600px;
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -569,10 +569,51 @@ button:is(:focus, :active) {
     width: 100%;
 }
 
+.product-img .slick-arrow.slick-hidden {
+    display: block;
+}
+
+.product-img .slick-arrows .slick-arrow,
+.product-img .slick-arrows {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+}
+
+.product-img .slick-arrows {
+    width: 100%;
+}
+
+.product-img .slick-arrows .slick-arrow {
+    background: #08040433;
+    border: 0;
+    width: 48px;
+    height: 48px;
+}
+
+.product-img .slick-arrows .slick-arrow img {
+    filter: invert(1);
+    padding: 10px
+}
+
+.product-img .slick-arrows .slick-arrow.prev-arrow {
+    left: 0;
+}
+
+.thumbnail-img .slick-track {
+    width: 100% !important;
+}
+
+.thumbnail-img .slick-initialized .slick-slide {
+    width: 25% !important;
+}
+
+/* 
 .thumbnail-img {
     display: flex;
     gap: 2rem;
-}
+} */
 
 .thumbnail-img img {
     width: 118px;
