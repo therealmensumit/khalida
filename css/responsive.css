@@ -147,6 +147,15 @@
         display: none;
     }
 
+    .founder-head {
+        right: unset;
+        left: 0;
+    }
+
+    .slide-card {
+        margin: 10px;
+    }
+
     .footer-logo {
         order: 1;
     }

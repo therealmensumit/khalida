@@ -242,7 +242,7 @@ button:is(:focus, :active) {
     object-position: center;
 }
 
-.product-slider .slick-dots {
+.slick-dots {
     bottom: -40px;
 }
 
@@ -411,6 +411,54 @@ button:is(:focus, :active) {
     background-image: url(../img/about/about-banner.jpg);
 }
 
+.bg3 {
+    background-image: url(../img/about/about2-bg.jpg);
+}
+
+.bg3 .collection-bg {
+    background-image: unset;
+}
+
+.founder-head {
+    right: unset;
+    left: -75px;
+}
+
+.slide-card {
+    border: 2px solid #000;
+    padding: 26px 42px;
+    margin-inline: 2rem;
+}
+
+.slide-card p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.slide-card a {
+    font-family: 'Opti-baker';
+    text-decoration: underline;
+    color: #080404;
+    display: inline-block;
+    margin: 7px 0 26px;
+}
+
+.slide-card .post-date {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    margin-top: 3px;
+}
+
+.testimonial-sec .slick-arrows {
+    inset: unset;
+    top: 0;
+    right: 47px;
+}
 
 /* footer  */
 #footer h4 {
