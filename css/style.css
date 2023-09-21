@@ -51,6 +51,10 @@ section {
     font-family: 'Outfit', sans-serif;
 }
 
+.btn:active {
+    background-color: transparent !important;
+}
+
 .btn-outline-primary {
     border: 2px solid #EFEEE9 !important;
     border-radius: 0;
@@ -242,7 +246,7 @@ button:is(:focus, :active) {
     bottom: -40px;
 }
 
-.product-slider .slick-dots li button:before {
+.slick-dots li button:before {
     background-color: #D9D9D9;
     border-radius: 50%;
     width: 16px;
@@ -251,7 +255,7 @@ button:is(:focus, :active) {
     font-size: 0;
 }
 
-.product-slider .slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button:before {
     background-color: #080404;
 }
 
@@ -340,6 +344,72 @@ button:is(:focus, :active) {
     height: 100%;
 }
 
+.contact-sec {
+    position: relative;
+    border-bottom: 2px solid #080404;
+}
+
+.contact-sec .d-line {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 2px;
+    height: 77%;
+    background-color: #080404;
+    transform: translateX(50%);
+}
+
+.contact-sec .d-line::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #080404;
+    right: 50%;
+    transform: translateX(50%) rotate(45deg);
+}
+
+.contact-wrapper:first-child {
+    margin-bottom: 72px;
+}
+
+.contact-wrapper h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper p {
+    margin-bottom: 0;
+}
+
+.contact-wrapper p a {
+    color: #080404;
+}
+
+.contact-wrapper p a:hover {
+    text-decoration: underline;
+}
+
+.get-in-touch-wrapper p {
+    font-family: 'Opti-baker';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+}
+
+.get-in-touch-wrapper:first-child {
+    margin-bottom: 78px;
+}
+
+
+
+.about-bg {
+    background-image: url(../img/about/about-banner.jpg);
+}
 
 
 /* footer  */
