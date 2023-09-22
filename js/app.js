@@ -3,6 +3,7 @@ $(function () {
   $("#footer").load("include/footer.html");
 });
 
+
 $(".product-slider").slick({
   dots: true,
   arrow: true,
@@ -113,3 +114,7 @@ $(".thumbnail-img").slick({
 $("#yt-vid").grtyoutube({
   autoPlay: true,
 });
+
+AOS.init({
+  duration: 1200,
+})

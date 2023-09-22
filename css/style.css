@@ -187,6 +187,14 @@ button:is(:focus, :active) {
     position: relative;
 }
 
+.hero-section .hero-title {
+    width: 90%;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
 .hero-section h1 {
     width: 100%;
     text-align: center;
@@ -195,10 +203,6 @@ button:is(:focus, :active) {
     font-style: normal;
     font-weight: 500;
     line-height: 60px;
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-    transform: translate(50%, 50%);
 }
 
 

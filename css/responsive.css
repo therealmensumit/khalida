@@ -1,4 +1,10 @@
 @media (max-width: 991px) {
+    .offcanvas.offcanvas-end.open {
+        right: 340px;
+        visibility: visible;
+        width: 320px;
+    }
+
     .home-page #header .offcanvas .navbar-brand img {
         filter: invert(0)
     }
@@ -19,7 +25,7 @@
 
     .offcanvas {
         background-color: #080404;
-
+        transition: all .4s;
     }
 
     .offcanvas .btn-close {
@@ -149,7 +155,7 @@
         content: '';
         bottom: 0;
         left: -5%;
-        width: 120%;
+        width: 108%;
         height: 2px;
         background-color: #080404;
     }
