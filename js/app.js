@@ -3,17 +3,28 @@ $(function () {
   $("#footer").load("include/footer.html");
 });
 
+$(window).scroll(function () {
+  $(window).scrollTop() > 200
+    ? $("#header").addClass("fix")
+    : $("#header").removeClass("fix");
+});
+
+$(".slide-card a").click(function () {
+  $(this).siblings("p").children().toggleClass("d-none");
+  $(this).text($(this).text() == "Show less" ? "Show more" : "Show less");
+});
 
 $(".product-slider").slick({
   dots: true,
   arrow: true,
-  infinite: false,
+  infinite: true,
   speed: 300,
-  // centerMode: true,
+  centerMode: true,
   centerPadding: "60px",
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
+  loop: true,
   autoplaySpeed: 2000,
   prevArrow: ".prev-arrow",
   nextArrow: ".next-arrow",
@@ -39,7 +50,7 @@ $(".product-slider").slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
       },
     },
     {
@@ -115,6 +126,7 @@ $("#yt-vid").grtyoutube({
   autoPlay: true,
 });
 
-AOS.init({
+/* AOS.init({
   duration: 1200,
-})
+}); */
+new WOW().init();

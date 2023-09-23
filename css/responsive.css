@@ -1,8 +1,12 @@
 @media (max-width: 991px) {
     .offcanvas.offcanvas-end.open {
-        right: 340px;
+        right: 320px;
         visibility: visible;
         width: 320px;
+    }
+
+    #header.fix .nav-link {
+        color: #fff;
     }
 
     .home-page #header .offcanvas .navbar-brand img {
@@ -111,6 +115,14 @@
         line-height: 30px;
         padding: 6px 13px;
         right: 10px;
+    }
+
+    .product-slider {
+        max-height: 280px;
+    }
+
+    .product-slider .slick-center {
+        width: 230px !important;
     }
 
     .product-slider img {
