@@ -18,6 +18,10 @@ body {
     background-color: #EFEEE9;
 }
 
+section {
+    overflow: hidden;
+}
+
 .font-opt {
     font-family: 'Opti-baker';
 }
