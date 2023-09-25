@@ -5,6 +5,10 @@
         width: 320px;
     }
 
+    #header {
+        padding-bottom: 0;
+    }
+
     #header.fix .nav-link {
         color: #fff;
     }
