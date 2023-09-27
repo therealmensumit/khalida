@@ -10,7 +10,7 @@ $(window).scroll(function () {
 });
 
 $(".slide-card a").click(function () {
-  $(this).siblings("p").children().toggleClass("d-none");
+  $(this).siblings("p").children().slideToggle();
   $(this).text($(this).text() == "Show less" ? "Show more" : "Show less");
 });
 

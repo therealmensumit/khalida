@@ -537,13 +537,9 @@ button:is(:focus, :active) {
     letter-spacing: 0em;
 }
 
-/* .slide-card p span {
-    display: block;
-}
-
-.slide-card p span.open {
+.slide-card p span {
     display: none;
-} */
+}
 
 .slide-card a {
     font-family: 'Opti-baker';
